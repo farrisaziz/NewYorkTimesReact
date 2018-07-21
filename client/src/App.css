@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  border: 1px solid #000;
+}
+
+.App-title {
+  text-decoration: underline;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.card {
+  margin: 30px;
+}
+
+.search {
+  padding: 20px 40px;
+}
+
+.search.active {
+  box-shadow: 5px 5px 0 rgba(0,0,0,.3);
+}
+
+.search.active:hover {
+  transform: translateY(1px);
+  box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+}
+
+.article-list {
+  -webkit-padding-start: 0;
+}
+
+.article-list li {
+  list-style: none;
+}
+
+.article {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.article .card-header {
+  padding: 5px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  cursor: pointer;
+  min-height: 60px;
+}
+
+.article .card-header a {
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.article .card-body {
+  position: relative;
+}
+
+.alert {
+  margin-top: 20px;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+  right: 20px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+.popup {
+  animation: fadeFromView 3s 3s ease forwards;
+}
+
+.close-btn {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  cursor: pointer;
+}
+
+.save {
+  width: 78px;
+  height: 49px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeFromView {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
